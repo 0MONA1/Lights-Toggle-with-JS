@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-family: Spartan;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        margin: 0;
+        margin-bottom: 1.5em;
+        text-shadow: 0 1px 8px rgba(255, 255, 255, 0.5);
+    }
+    .container{
+        /* width: 70%; */
+        background: rgb(36, 36, 77);
+        /* border: 2px solid hotpink; */
+        /* margin: 0 auto; */
+        display: grid;
+        place-items: center;
+        /* position: absolute; */
+        /* top: 30%;
+        left: 40%; */
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    button{
+        padding: 0.3em 1.4em;
+        /* display: flex; */
+        background: indianred;
+        font-size: 1em;
+        font-weight: bolder;
+        font-style: italic;
+        outline: none;
+        cursor: pointer;
+        margin: 0em;
+
+    }
+    .inner__container{
+        width: 80vw;
+        height: 70vh;
+        /* border: 2px solid gold; */
+        display: grid;
+        place-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="inner__container">
+
+            
+            <h1>
+            Can you turn on the lights?
+            <i class="fas fa-lightbulb-on"></i>
+    </h1>
+    <button onclick="document.getElementById('img').src = 'lightsOn.jpg'">
+       Click here to turn on
+
+    </button>
+    <img src="lightsOn.jpg" id = "img" alt="picture of light on">
+    
+    <button onclick="document.getElementById('img').src = 'lightsOff.jpg'">
+        Click here to turn off
+        
+    </button>
+</div>
+    
+    
+</div>
+</body>
+
+</html>
